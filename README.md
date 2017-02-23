@@ -6,14 +6,23 @@
 Starter Kit for QA automation tasks - MediaMonks BA (unofficial)
 
 
-#### Background Links
+#### Where I can find download the driver's?
 
-+ Nightwatch website: http://nightwatchjs.org/
-+ Github: https://github.com/nightwatchjs/nightwatch
-+ Guide/docs: https://github.com/nightwatchjs/nightwatch-docs
-(_don't be put off by the lack of docs, we're here to help if you get stuck!_)
-+ Configuration file settings: http://nightwatchjs.org/guide#settings-file
++ Chrome: https://sites.google.com/a/chromium.org/chromedriver/downloads
++ Internet Explorer: http://selenium-release.storage.googleapis.com/index.html
++ Firefox: is included in the selenium-server-standalone.jar available in the Selenium downloads. The driver comes in the form of an xpi (firefox extension) which is added to the firefox profile when you start a new instance of FirefoxDriver.
 
+```sh
+"selenium" : {
+  ...
+  "cli_args" : {
+    "webdriver.chrome.driver" : "./drivers/chromedriver.exe",
+    "webdriver.ie.driver" : "./drivers/IEDriverServer.exe"
+  }
+}
+```
+
+More information: https://github.com/nightwatchjs/nightwatch/wiki
 
 ## _How can I use it_?
 
@@ -43,5 +52,7 @@ Run the Nightwatch tests:
 ```sh
 npm test
 ```
+
+See the package.json to use other commands
 
 ### MIT Licence
