@@ -11,7 +11,10 @@
     "cleanscreenshots": "rmdir screenshots /s /q",
     "cleanfolders": "npm run cleanscreenshots && npm run cleanreports",
     "postinstall": "node nightwatch.conf.js",
-    "test": "./node_modules/.bin/nightwatch --env default"
+    "test": "./node_modules/.bin/nightwatch --env default",
+    "test:chrome": "./node_modules/.bin/nightwatch --env chrome",
+    "test:firefox": "./node_modules/.bin/nightwatch --env firefox",
+    "test:ie": "./node_modules/.bin/nightwatch --env ie"
   },
   "author": {
     "name": "Alan Gabriel Dawidowicz",

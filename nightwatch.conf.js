@@ -2,6 +2,7 @@ var   FILECOUNT         = 0;
 const BINPATH           = './node_modules/nightwatch/bin/';
 const REPORTS_PATH      = "./reports/";
 const SCREENSHOT_PATH   = "./screenshots/";
+const DRIVERS_PATH      = "./drivers/";
 
 module.exports = {
   "src_folders": [
@@ -14,7 +15,8 @@ module.exports = {
     "host": "127.0.0.1",
     "port": 4444,
     "cli_args": {
-      "webdriver.chrome.driver" : "./node_modules/nightwatch/bin/chromedriver"
+      "webdriver.chrome.driver" : "./node_modules/nightwatch/bin/chromedriver",
+      "webdriver.ie.driver" : DRIVERS_PATH + "IEDriverServer.exe"
     }
   },
   "test_settings": {
@@ -65,6 +67,18 @@ module.exports = {
       "desiredCapabilities": {
         "browserName": "chrome",
         "javascriptEnabled": true 
+      }
+    },
+    "firefox" : {
+      "desiredCapabilities": {
+        "browserName": "firefox"
+      }
+    },
+    "ie": {
+      "desiredCapabilities": {
+          "browserName" : "internet explorer",
+          "javascriptEnabled" : true,
+          "acceptSslCerts" : true
       }
     }
   }
