@@ -55,4 +55,8 @@ npm test
 
 See the package.json to use other commands
 
+### Custom Commands and Assertions
+
+Most of the files in the "custom" folder come from [nightwatch-commands](https://github.com/mobify/nightwatch-commands).
+
 ### MIT Licence

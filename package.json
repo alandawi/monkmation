@@ -22,6 +22,10 @@
   },
   "license": "MIT",
   "dependencies": {
+    "async": "0.2.10",
+    "chalk": "0.4.0",
+    "mkdirp": "0.5.1",
+    "easyimage": "^1.2.2",
     "nightwatch": "^0.9.9",
     "selenium-download": "^2.0.7"
   },

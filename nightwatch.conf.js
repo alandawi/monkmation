@@ -3,11 +3,14 @@ const BINPATH           = './node_modules/nightwatch/bin/';
 const REPORTS_PATH      = "./reports/";
 const SCREENSHOT_PATH   = "./screenshots/";
 const DRIVERS_PATH      = "./drivers/";
+const CUSTOM_PATH       = "./custom/";
 
 module.exports = {
   "src_folders": [
     "test/basic"
   ],
+  "custom_commands_path": CUSTOM_PATH + "commands",
+  "custom_assertions_path": CUSTOM_PATH + "assertions",
   "output_folder": REPORTS_PATH,
   "selenium": {
     "start_process": true,
