@@ -1,0 +1,15 @@
+node_modules/
+npm-debug.log
+nohup.out
+.dea
+selenium-debug.log
+.DS_Store
+
+nightwatch
+nightwatch/selenium.jar
+
+nightwatch/chromedriver
+
+reports
+screenshots
+.env

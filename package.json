@@ -1,0 +1,40 @@
+{
+  "name": "nightwatch-mmba",
+  "version": "1.0.0",
+  "description": "A node.js bindings implementation for selenium 2.0/webdriver",
+  "main": "index.js",
+  "engines": {
+    "node": "4.4.6"
+  },
+  "scripts": {
+    "cleanreports": "rmdir reports /s /q",
+    "cleanscreenshots": "rmdir screenshots /s /q",
+    "cleanfolders": "npm run cleanscreenshots && npm run cleanreports",
+    "postinstall": "node nightwatch.conf.js",
+    "test": "./node_modules/.bin/nightwatch --env default"
+  },
+  "author": {
+    "name": "Alan Gabriel Dawidowicz",
+    "email": "alan.dawidowicz@mediamonks.com"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "nightwatch": "^0.9.9",
+    "selenium-download": "^2.0.7"
+  },
+  "devDependencies": {
+    "mime-types": "^2.1.13",
+    "nodemon": "^1.11.0"
+  },
+  "keywords": [
+    "nightwatch",
+    "testing",
+    "UI",
+    "test",
+    "mediamonks",
+    "mediamonks buenos aires",
+    "testing",
+    "User Acceptance Testing",
+    "UAT"
+  ]
+}
