@@ -5,27 +5,7 @@
 
 Starter Kit for QA automation tasks - MediaMonks BA (unofficial)
 
-
-#### Where I can find download the driver's?
-
-+ Chrome: https://sites.google.com/a/chromium.org/chromedriver/downloads
-+ Internet Explorer: http://selenium-release.storage.googleapis.com/index.html
-+ Firefox: is included in the selenium-server-standalone.jar available in the Selenium downloads. The driver comes in the form of an xpi (firefox extension) which is added to the firefox profile when you start a new instance of FirefoxDriver.
-
-```sh
-"selenium" : {
-  ...
-  "cli_args" : {
-    "webdriver.chrome.driver" : "./drivers/chromedriver.exe",
-    "webdriver.ie.driver" : "./drivers/IEDriverServer.exe"
-  }
-}
-```
-
-More information: https://github.com/nightwatchjs/nightwatch/wiki
-
-## _How can I use it_?
-
+## How can I use it?
 Follow the next steps _**(Fewer steps than the Moonwalk)**_:
 
 ### 1. Clone
@@ -53,10 +33,39 @@ Run the Nightwatch tests:
 npm test
 ```
 
-See the package.json to use other commands
+This are all the main scripts:
 
-### Custom Commands and Assertions
+```sh
+npm run cleanreports        # clean the reports folder
+npm run cleanscreenshots    # clean the screenshots folder
+npm run cleanfolders        # run the cleanscreenshots & cleanreports scripts
+npm run test                # run the unit tests with the default environment
+npm run test:chrome         # run the unit tests with the Chrome environment
+npm run test:firefox        # run the unit tests with the Firefox environment
+npm run test:ie             # run the unit tests with the Internet Explorer environment
+```
 
-Most of the files in the "custom" folder come from [nightwatch-commands](https://github.com/mobify/nightwatch-commands). If you want to know how to use, please read the [Wiki](https://github.com/alandawi/monkmation/wiki).
+## Documentation
+View the [documentation](https://github.com/alandawi/monkmation/wiki).
 
-### MIT Licence
+## Where I can find download the driver's?
++ Chrome: https://sites.google.com/a/chromium.org/chromedriver/downloads
++ Internet Explorer: http://selenium-release.storage.googleapis.com/index.html
++ Firefox: is included in the selenium-server-standalone.jar available in the Selenium downloads. The driver comes in the form of an xpi (firefox extension) which is added to the firefox profile when you start a new instance of FirefoxDriver.
+
+```sh
+"selenium" : {
+  ...
+  "cli_args" : {
+    "webdriver.chrome.driver" : "./drivers/chromedriver.exe",
+    "webdriver.ie.driver" : "./drivers/IEDriverServer.exe"
+  }
+}
+```
+
+More information: https://github.com/nightwatchjs/nightwatch/wiki
+
+## Custom Commands and Assertions
+Most of the files in the "custom" folder come from [nightwatch-commands](https://github.com/mobify/nightwatch-commands).
+
+## MIT Licence
