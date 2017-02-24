@@ -26,7 +26,8 @@ module.exports = {
     "default": {
       "screenshots": {
         "enabled": true,
-        "path": './screenshots'
+        "path": SCREENSHOT_PATH,
+        "on_failure": true
       },
       "globals": {
         "waitForConditionTimeout": 5000
