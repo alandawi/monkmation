@@ -7,7 +7,7 @@ const CUSTOM_PATH       = "./custom/";
 
 module.exports = {
   "src_folders": [
-    "test/basic"
+    "test/"
   ],
   "custom_commands_path": CUSTOM_PATH + "commands",
   "custom_assertions_path": CUSTOM_PATH + "assertions",
@@ -67,17 +67,32 @@ module.exports = {
       }
     },
     "chrome": {
+      "screenshots": {
+          "enabled": true,
+          "path": SCREENSHOT_PATH,
+          "on_failure": true
+      },
       "desiredCapabilities": {
         "browserName": "chrome",
         "javascriptEnabled": true 
       }
     },
     "firefox" : {
+      "screenshots": {
+          "enabled": true,
+          "path": SCREENSHOT_PATH,
+          "on_failure": true
+      },
       "desiredCapabilities": {
         "browserName": "firefox"
       }
     },
     "ie": {
+      "screenshots": {
+          "enabled": true,
+          "path": SCREENSHOT_PATH,
+          "on_failure": true
+      },
       "desiredCapabilities": {
           "browserName" : "internet explorer",
           "javascriptEnabled" : true,
