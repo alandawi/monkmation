@@ -57,6 +57,6 @@ See the package.json to use other commands
 
 ### Custom Commands and Assertions
 
-Most of the files in the "custom" folder come from [nightwatch-commands](https://github.com/mobify/nightwatch-commands).
+Most of the files in the "custom" folder come from [nightwatch-commands](https://github.com/mobify/nightwatch-commands). If you want to know how to use, please read the [Wiki](https://github.com/alandawi/monkmation/wiki).
 
 ### MIT Licence
