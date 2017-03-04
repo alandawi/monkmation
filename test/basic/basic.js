@@ -1,13 +1,13 @@
 var conf = require('../../nightwatch.conf.js');
 
 module.exports = {
-  'MediaMonksBA - Basic Example' : function (browser) {
-    browser
-      .url('https://www.mediamonks.com')
-      .waitForElementVisible('body', 1000)
-      .pause(5000)
-      .verify.containsText(".contact-table-name:first-child", "AMSTERDAM HQ")
-      .saveScreenshot(conf.imgpath(browser) + 'mediamonks.png')
-      .end();
-  }
+    "MediaMonksBA - Basic Example": function(browser) {
+      return browser
+          .url('https://www.mediamonks.com')
+          .waitForElementVisible('body', 1000)
+          .pause(4000)
+          .verify.containsText(".contact-table-name:first-child", "AMSTERDAM HQ")
+          .saveScreenshot(conf.imgpath(browser) + 'mediamonks.png')
+          .end();
+    }
 };

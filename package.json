@@ -1,6 +1,6 @@
 {
   "name": "nightwatch-mmba",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A node.js bindings implementation for selenium 2.0/webdriver",
   "main": "index.js",
   "engines": {
@@ -15,10 +15,10 @@
     "cleanscreenshots": "rmdir screenshots /s /q",
     "cleanfolders": "npm run cleanscreenshots && npm run cleanreports",
     "postinstall": "node nightwatch.conf.js",
-    "test": "./node_modules/.bin/nightwatch --env default",
-    "test:chrome": "./node_modules/.bin/nightwatch --env chrome",
-    "test:firefox": "./node_modules/.bin/nightwatch --env firefox",
-    "test:ie": "./node_modules/.bin/nightwatch --env ie"
+    "test": "./node_modules/.bin/nightwatch --env default --reporter ./config/html-reporter.js",
+    "test:chrome": "./node_modules/.bin/nightwatch --env chrome --reporter ./config/html-reporter.js",
+    "test:firefox": "./node_modules/.bin/nightwatch --env firefox --reporter ./config/html-reporter.js",
+    "test:ie": "./node_modules/.bin/nightwatch --env ie --reporter ./config/html-reporter.js"
   },
   "author": {
     "name": "Alan Gabriel Dawidowicz",
@@ -28,9 +28,10 @@
   "dependencies": {
     "async": "0.2.10",
     "chalk": "0.4.0",
-    "mkdirp": "0.5.1",
     "easyimage": "^1.2.2",
+    "mkdirp": "0.5.1",
     "nightwatch": "^0.9.9",
+    "nightwatch-html-reporter": "^2.0.0",
     "selenium-download": "^2.0.7"
   },
   "devDependencies": {
