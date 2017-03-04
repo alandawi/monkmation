@@ -34,11 +34,6 @@ module.exports = {
       },
       "desiredCapabilities": {
         "browserName": "chrome",
-        "chromeOptions": {
-            "args": [
-                "window-size=1600,900"
-            ]
-        },
         "javascriptEnabled": true
       }
     },

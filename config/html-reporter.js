@@ -1,11 +1,12 @@
 var HtmlReporter = require('nightwatch-html-reporter');
+
 var reporter = new HtmlReporter({
     openBrowser: true,
     reportsDirectory: 'reports',
-    reportFilename: 'pretty_report_monkmation.html',
+    reportFilename: 'report_monkmation_.html',
     themeName: 'cover',
     hideSuccess: false,
-    uniqueFilename: false,
+    uniqueFilename: true,
     relativeScreenshots: false
 });
 
