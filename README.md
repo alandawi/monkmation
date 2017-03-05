@@ -39,10 +39,10 @@ This are all the main scripts:
 npm run cleanreports        # clean the reports folder
 npm run cleanscreenshots    # clean the screenshots folder
 npm run cleanfolders        # run the cleanscreenshots & cleanreports scripts
-npm run test                # run the unit tests with the default environment
-npm run test:chrome         # run the unit tests with the Chrome environment
-npm run test:firefox        # run the unit tests with the Firefox environment
-npm run test:ie             # run the unit tests with the Internet Explorer environment
+npm run test                # run the test with the default environment
+npm run test:chrome         # run the test with the Chrome environment
+npm run test:firefox        # run the test with the Firefox environment
+npm run test:ie             # run the test with the Internet Explorer environment
 ```
 
 ## Documentation

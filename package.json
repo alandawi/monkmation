@@ -1,6 +1,6 @@
 {
   "name": "monkmation",
-  "version": "1.1.1",
+  "version": "1.2.4",
   "description": "Starter Kit for QA automation tasks - MediaMonks BA (unofficial)",
   "main": "index.js",
   "engines": {
@@ -36,6 +36,7 @@
   },
   "devDependencies": {
     "mime-types": "^2.1.13",
+    "chai": "^3.5.0",
     "nodemon": "^1.11.0"
   },
   "keywords": [

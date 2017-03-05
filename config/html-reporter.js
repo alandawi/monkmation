@@ -4,7 +4,7 @@ var reporter = new HtmlReporter({
     openBrowser: true,
     reportsDirectory: 'reports',
     reportFilename: 'report_monkmation_.html',
-    themeName: 'cover',
+    themeName: 'default',
     hideSuccess: false,
     uniqueFilename: true,
     relativeScreenshots: false
