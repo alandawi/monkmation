@@ -68,4 +68,9 @@ More information: https://github.com/nightwatchjs/nightwatch/wiki
 ## Custom Commands and Assertions
 Most of the files in the "custom" folder come from [nightwatch-commands](https://github.com/mobify/nightwatch-commands).
 
+## Screenshots
+![alt text](https://cloud.githubusercontent.com/assets/1291730/25543124/a1d5bd3a-2c2b-11e7-8918-e60814d068ec.png "Console Report")
+
+![alt text](https://cloud.githubusercontent.com/assets/1291730/25543139/adc84d60-2c2b-11e7-8ca0-e153ac26cd08.png "HTML Report")
+
 ## MIT Licence
